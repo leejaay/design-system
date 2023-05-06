@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.select-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.select {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 98px;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  row-gap: 8px;
+  border: 1px solid $borderColorWhite;
+  border-radius: 8px;
+  background-color: rgba($white,0.01);
+  opacity: 0.6;
+  position: relative;
+  transition: 200ms;
+}
+
+.select-active {
+  opacity: 1;
+  border: 1px solid $borderColorWhiteBold;
+  background-color: rgba(255, 255, 255,0.08);
+  transition: 200ms;
+}
+
+.select-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: $white;
+}
+
+.check-circle-container {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}

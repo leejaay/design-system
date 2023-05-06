@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.icon {
+  display: flex;
+}
+
+.icon-primary {
+  path, svg {
+    fill: $primaryColor;
+    stroke: $primaryColor;
+  }
+}
+
+.icon-white {
+  path, svg {
+    fill: $white;
+    stroke: $white;
+  }
+}

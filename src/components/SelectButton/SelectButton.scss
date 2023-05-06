@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.select-button-container {
+  display: flex;
+  column-gap: 15px;
+}
+
+.select-button {
+  font-weight: 600;
+  font-size: 14px;
+  color: $primaryColor;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid $selectButtonBorderColor;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.select-button-selected {
+  color: $white;
+  background-color: $primaryColor;
+  border: 1px solid $primaryColor;
+  transition: 200ms;
+}

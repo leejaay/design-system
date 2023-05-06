@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+
+.tab-container {
+  width: 100%;
+
+  .tab-list {
+    display: flex;
+    border-bottom: 1px solid $tabBorderColor;
+    padding-inline-start: 1.5rem;
+
+    .tab-list-item {
+      padding: 15px 0;
+      margin: 0 15px;
+      cursor: pointer;
+      color: $white;
+      transition: all 0.3s;
+      position: relative;
+
+      &:after {
+        width: 0;
+        height: 3px;
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        background-color: $tabListItemSelectedBorderColor;
+        transition: all 0.3s;
+      }
+
+      &:first-child {
+        margin-inline-start: 0;
+      }
+
+      &.tab-list-item-selected {
+        color: $tabListItemSelectedColor;
+        position: relative;
+        transition: all 0.3s;
+        cursor: default;
+
+        &:after {
+          width: 30px;
+          height: 3px;
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          border-radius: 3px;
+          background-color: $tabListItemSelectedBorderColor;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+
+  .tab-contents {
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+
+    .tab-content {
+      display: none;
+      margin-bottom: 1.5rem;
+
+      &.teb-content-show {
+        display: block;
+        color: $white;
+      }
+    }
+  }
+}

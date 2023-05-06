@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+
+.text-input-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.text-input-label:has(.text-input-full-width) {
+  width: 100%;
+}
+
+.text-input-with-icon input {
+  padding-left: 35px !important;
+}
+
+.text-input {
+  background-color: $textInputBackgroundColor;
+  border: 1px solid $borderColorWhite;
+  border-radius: 8px;
+  padding: 14px;
+  color: $subtitleColor;
+  font-weight: 500;
+  font-size: 14px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    border: 1px solid $borderColorWhiteBold;
+  }
+}
+
+.text-input-full-width {
+  width: 100%;
+}
+
+.text-input-icon {
+  position: absolute;
+  left: 10px;
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.badge {
+  width: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.badge-text {
+  padding: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.success-badge {
+  background-color: rgba($successBadgeBackgroundColor, 0.24);
+
+  .badge-text {
+    color: $successBadgeTextColor;
+  }
+}
+
+.info-badge {
+  background-color: rgba($infoBadgeBackgroundColor, 0.24);
+
+  .badge-text {
+    color: $infoBadgeTextColor;
+  }
+}
+
+.warning-badge {
+  background-color: rgba($warningBadgeBackgroundColor, 0.24);
+
+  .badge-text {
+    color: $warningBadgeTextColor;
+  }
+}
+
+.danger-badge {
+  background-color: rgba($dangerBadgeBackgroundColor, 0.24);
+
+  .badge-text {
+    color: $dangerBadgeTextColor;
+  }
+}

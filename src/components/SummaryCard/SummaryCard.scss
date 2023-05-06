@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.summary-card-container {
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: $summaryCardBackgroundColor;
+
+  .summary-card-top {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+
+    .summary-card-icon {
+      width: 40px;
+      height: 40px;
+      background-color: $summaryCardIconBackgroundColor;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .summary-card-percent-container {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+
+      .summary-card-percent-value {
+        font-size: 14px;
+
+        &.up {
+          color: $summaryCardPercentValueUpColor;
+        }
+
+        &.down {
+          color: $summaryCardPercentValueDownColor;
+        }
+      }
+
+      .summary-card-percent-icon {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .summary-card-bottom {
+    .summary-card-title {
+      font-size: 14px;
+      color: $summaryCardTitleColor;
+    }
+
+    .summary-card-value {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: $white;
+    }
+  }
+}

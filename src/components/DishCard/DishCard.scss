@@ -1,0 +1,83 @@
+@import "../../styles/variables";
+
+.dish-card-container {
+  background-color: $dishCardBackgroundColor;
+  border: 1px solid $dishCardBorderColor;
+  border-radius: 8px;
+}
+
+.dish-card {
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.editable-dish-card {
+  padding: 2rem 0 0 0 !important;
+}
+
+.dish-card-image {
+  width: 150px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.dish-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.dish-card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    color: $dishCardPriceColor;
+  }
+}
+
+.dish-card-inventory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    color: $dishCardPriceColor;
+  }
+}
+
+.dish-card-edit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  font-family: Barlow, sans-serif !important;
+  color: $primaryColor;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: rgba($primaryColor, 0.24);
+  cursor: pointer;
+}

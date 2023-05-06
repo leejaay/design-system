@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.table-container {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    .table-header {
+      height: 60px;
+      border-bottom: 1px solid $tableHeaderBorderBottomColor;
+      color: $white;
+    }
+  }
+
+  th {
+    font-size: 16px;
+  }
+
+  td {
+    font-size: 14px;
+    color: $white;
+  }
+
+  td, th {
+    text-align: left;
+    padding: 1rem 1.25rem;
+  }
+}

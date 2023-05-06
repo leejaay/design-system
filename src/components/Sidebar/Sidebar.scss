@@ -1,0 +1,107 @@
+@import "../../styles/variables";
+
+.sidebar {
+  width: 104px;
+  height: 100vh;
+  background: $sidebarBackgroundColor;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+  position: fixed;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .sidebar-item-container {
+    width: 100%;
+    height: 102px;
+    display: flex;
+    align-items: center;
+
+    .sidebar-item {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:after {
+        width: 92px;
+        height: 80px;
+        background: transparent;
+        content: '';
+        position: absolute;
+        right: 0;
+        border-end-start-radius: 12px;
+        border-start-start-radius: 12px;
+        transition: background 0.3s;
+      }
+
+      .sidebar-item-icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        transition: all 0.3s;
+
+        svg {
+          path {
+            fill: $primaryColor;
+          }
+        }
+      }
+    }
+
+    .sidebar-item-selected {
+      cursor: default;
+
+      &:after {
+        width: 92px;
+        height: 80px;
+        background: $sidebarItemSelectedBackgroundColor;
+        content: '';
+        position: absolute;
+        right: 0;
+        border-end-start-radius: 12px;
+        border-start-start-radius: 12px;
+        transition: background 0.3s;
+      }
+
+      .sidebar-item-icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        background: $sidebarItemSelectedIconBackgroundColor;
+        box-shadow: 0 8px 24px rgba($primaryColor, 0.3);
+        transition: all 0.3s;
+
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+
+
+  .sidebar-logo {
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}
