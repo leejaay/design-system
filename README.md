@@ -17,4 +17,4 @@ If you want to see my components, follow the steps below:
 
 6. Run ``` npm link fresh-design-system ```
 
-7. Run ``` npm run storybook ``` to see all my components in storybook 🫶
+7. Run ``` npm run storybook ``` to see all of my components in storybook 🫶
